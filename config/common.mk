@@ -136,6 +136,7 @@ PRODUCT_PACKAGES += \
 
 # Optional CM packages
 PRODUCT_PACKAGES += \
+    Basic \
     libemoji
 
 # Custom CM packages
