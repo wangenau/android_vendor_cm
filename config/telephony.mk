@@ -16,8 +16,6 @@ PRODUCT_PACKAGES += \
     Mms \
     Stk \
     CellBroadcastReceiver \
-    VoiceDialer \
-    WhisperPush
 
 # Mms depends on SoundRecorder for recorded audio messages
 PRODUCT_PACKAGES += \
