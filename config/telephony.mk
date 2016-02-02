@@ -16,8 +16,7 @@ PRODUCT_PACKAGES += \
     Mms \
     Stk \
     CellBroadcastReceiver \
-    VoiceDialer \
-    WhisperPush
+    VoiceDialer
 
 # Default ringtone
 PRODUCT_PROPERTY_OVERRIDES += \
