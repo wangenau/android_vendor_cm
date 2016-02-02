@@ -15,8 +15,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     Mms \
     Stk \
-    CellBroadcastReceiver \
-    VoiceDialer
+    CellBroadcastReceiver
 
 # Default ringtone
 PRODUCT_PROPERTY_OVERRIDES += \
