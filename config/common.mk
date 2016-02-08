@@ -136,8 +136,6 @@ PRODUCT_PACKAGES += \
 
 # Optional CM packages
 PRODUCT_PACKAGES += \
-    VoicePlus \
-    Basic \
     libemoji
 
 # Custom CM packages
@@ -147,11 +145,9 @@ PRODUCT_PACKAGES += \
     DSPManager \
     libcyanogen-dsp \
     audio_effects.conf \
-    CMWallpapers \
     Apollo \
     CMFileManager \
     LockClock \
-    CMUpdater \
     CMHome
 
 # CM Hardware Abstraction Framework
@@ -214,12 +210,6 @@ PRODUCT_PACKAGES += \
     procrank \
     Superuser \
     su
-
-# Terminal Emulator
-PRODUCT_COPY_FILES +=  \
-    vendor/cm/proprietary/Term.apk:system/app/Term.apk \
-    vendor/cm/proprietary/lib/armeabi/libjackpal-androidterm5.so:system/lib/libjackpal-androidterm5.so \
-    vendor/cm/proprietary/lib/armeabi/libjackpal-termexec2.so:system/lib/libjackpal-termexec2.so
 
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.root_access=1
