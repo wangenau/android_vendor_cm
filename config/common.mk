@@ -145,11 +145,9 @@ PRODUCT_PACKAGES += \
     DSPManager \
     libcyanogen-dsp \
     audio_effects.conf \
-    CMWallpapers \
     Apollo \
     CMFileManager \
     LockClock \
-    CMUpdater \
     CMAccount \
     CMHome
 
@@ -204,16 +202,11 @@ PRODUCT_PACKAGES += \
     libstagefright_soft_ffmpegvdec \
     libFFmpegExtractor \
     libnamparser
+
 # Superuser
 PRODUCT_PACKAGES += \
     Superuser \
     su
-
-# Terminal Emulator
-PRODUCT_COPY_FILES +=  \
-    vendor/cm/proprietary/Term.apk:system/app/Term.apk \
-    vendor/cm/proprietary/lib/armeabi/libjackpal-androidterm5.so:system/lib/libjackpal-androidterm5.so \
-    vendor/cm/proprietary/lib/armeabi/libjackpal-termexec2.so:system/lib/libjackpal-termexec2.so
 
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.root_access=1
