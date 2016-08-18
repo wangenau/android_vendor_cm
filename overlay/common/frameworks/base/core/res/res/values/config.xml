@@ -52,5 +52,4 @@
         <item>com.antutu.ABenchMark.*,2</item>
         <item>.*com.antutu.benchmark.*,2</item>
     </string-array>
-
 </resources>

@@ -31,5 +31,3 @@ PRODUCT_COPY_FILES += \
 	$(RINGTONE_PATH)/Lyon.ogg:system/media/audio/ringtones/Lyon.ogg \
 	$(RINGTONE_PATH)/Rockin.ogg:system/media/audio/ringtones/Rockin.ogg \
 	$(RINGTONE_PATH)/Sheep.mp3:system/media/audio/ringtones/Sheep.mp3
-
-
