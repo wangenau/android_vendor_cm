@@ -97,7 +97,6 @@ PRODUCT_PACKAGES += \
 
 # Required CM packages
 PRODUCT_PACKAGES += \
-    Development \
     LatinIME \
     BluetoothExt
 
