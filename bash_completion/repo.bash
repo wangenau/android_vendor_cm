@@ -587,7 +587,6 @@ _repo_sync() {
     OPTIONS=(
         "-h" "--help"
         "-f" "--force-broken"
-             "--force-sync"
         "-l" "--local-only"
         "-n" "--network-only"
         "-d" "--detach"
