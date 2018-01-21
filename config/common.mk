@@ -84,9 +84,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/cm/config/permissions/com.cyanogenmod.android.xml:system/etc/permissions/com.cyanogenmod.android.xml
 
-# T-Mobile theme engine
-include vendor/cm/config/themes_common.mk
-
 # Bootanimation
 PRODUCT_PACKAGES += \
     bootanimation.zip
