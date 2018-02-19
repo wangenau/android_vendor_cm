@@ -84,6 +84,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/cm/config/permissions/com.cyanogenmod.android.xml:system/etc/permissions/com.cyanogenmod.android.xml
 
+# Themes provider
+PRODUCT_PACKAGES += \
+    ThemesProvider
+
 # Bootanimation
 PRODUCT_PACKAGES += \
     bootanimation.zip
