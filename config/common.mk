@@ -166,11 +166,7 @@ PRODUCT_PACKAGES += \
 
 # Superuser
 PRODUCT_PACKAGES += \
-    Superuser \
     su
-
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.sys.root_access=1
 
 # These packages are excluded from user builds
 ifneq ($(TARGET_BUILD_VARIANT),user)
