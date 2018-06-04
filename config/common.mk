@@ -164,16 +164,18 @@ PRODUCT_PACKAGES += \
     libFFmpegExtractor \
     libnamparser
 
-# Superuser
-PRODUCT_PACKAGES += \
-    su
-
 # These packages are excluded from user builds
 ifneq ($(TARGET_BUILD_VARIANT),user)
 
 PRODUCT_PACKAGES += \
     procmem \
     procrank
+
+# Conditionally build in su
+ifeq ($(WITH_SU),true)
+PRODUCT_PACKAGES += \
+    su
+endif
 
 endif
 
