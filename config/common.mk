@@ -99,8 +99,12 @@ PRODUCT_PACKAGES += \
     audio_effects.conf \
     Apollo \
     CMFileManager \
-    LockClock \
-    Fennec
+    LockClock
+
+# Custom prebuilt apps
+PRODUCT_PACKAGES += \
+    Fennec \
+    Silence
 
 # CM Hardware Abstraction Framework
 PRODUCT_PACKAGES += \
