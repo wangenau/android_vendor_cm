@@ -185,7 +185,7 @@ ifndef CM_BUILDTYPE
     endif
 endif
 
-# Filter out random types, so it'll reset to OPTIMIZED
+# Filter out random types, so it'll reset to customized
 ifeq ($(filter RELEASE NIGHTLY SNAPSHOT EXPERIMENTAL,$(CM_BUILDTYPE)),)
     CM_BUILDTYPE :=
 endif
@@ -212,14 +212,14 @@ ifdef CM_BUILDTYPE
         endif
     endif
 else
-    # If CM_BUILDTYPE is not defined, set to OPTIMIZED
-    CM_BUILDTYPE := OPTIMIZED
+    # If CM_BUILDTYPE is not defined, set to customized
+    CM_BUILDTYPE := customized
     CM_EXTRAVERSION :=
 endif
 
-ifeq ($(CM_BUILDTYPE), OPTIMIZED)
-    ifneq ($(TARGET_OPTIMIZED_BUILD_ID),)
-        CM_EXTRAVERSION := -$(TARGET_OPTIMIZED_BUILD_ID)
+ifeq ($(CM_BUILDTYPE), customized)
+    ifneq ($(TARGET_CUSTOMIZED_BUILD_ID),)
+        CM_EXTRAVERSION := -$(TARGET_CUSTOMIZED_BUILD_ID)
     endif
 endif
 
