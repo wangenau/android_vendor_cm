@@ -128,10 +128,8 @@ PRODUCT_PACKAGES += \
     ntfsfix \
     ntfs-3g \
     gdbserver \
-    micro_bench \
     oprofiled \
-    sqlite3 \
-    strace
+    sqlite3
 
 # Openssh
 PRODUCT_PACKAGES += \
@@ -155,18 +153,18 @@ PRODUCT_PACKAGES += \
     libnamparser
 
 # These packages are excluded from user builds
-ifneq ($(TARGET_BUILD_VARIANT),user)
-
-PRODUCT_PACKAGES += \
+PRODUCT_PACKAGES_DEBUG += \
+    micro_bench \
     procmem \
-    procrank
+    procrank \
+    strace
 
 # Conditionally build in su
+ifneq ($(TARGET_BUILD_VARIANT),user)
 ifeq ($(WITH_SU),true)
 PRODUCT_PACKAGES += \
     su
 endif
-
 endif
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/cm/overlay/common
