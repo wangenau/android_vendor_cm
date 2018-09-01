@@ -99,8 +99,7 @@ PRODUCT_PACKAGES += \
 
 # Custom prebuilt apps
 PRODUCT_PACKAGES += \
-    Fennec \
-    Silence
+    Fennec
 
 # CM Hardware Abstraction Framework
 PRODUCT_PACKAGES += \
