@@ -125,10 +125,7 @@ PRODUCT_PACKAGES += \
     fsck.f2fs \
     fibmap.f2fs \
     ntfsfix \
-    ntfs-3g \
-    gdbserver \
-    oprofiled \
-    sqlite3
+    ntfs-3g
 
 # Openssh
 PRODUCT_PACKAGES += \
@@ -153,9 +150,12 @@ PRODUCT_PACKAGES += \
 
 # These packages are excluded from user builds
 PRODUCT_PACKAGES_DEBUG += \
+    gdbserver \
     micro_bench \
+    oprofiled \
     procmem \
     procrank \
+    sqlite3 \
     strace
 
 # Conditionally build in su
